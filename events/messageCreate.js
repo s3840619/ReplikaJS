@@ -7,7 +7,7 @@ module.exports = {
         if (!current) {
             return;
         }
-        if (current instanceof ReplikaInstance && !message.author.bot && (!message.author.username === "面包")) {
+        if (current instanceof ReplikaInstance && !message.author.bot && !(message.author.username == "面包")) {
             current.send(message);
             current.watchdog.refresh();
         }
