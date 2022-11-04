@@ -45,7 +45,7 @@ class ReplikaInstance {
         this.websocket = null;
         this.connected = false;
 
-        this.watchdog = setTimeout(this.time_disconnect.bind(this), 5 * 60 * 1000);
+        this.watchdog = setTimeout(this.time_disconnect.bind(this), 30 * 60 * 1000);
 
         this.name = params.name;
         this.exhaustion = null;
